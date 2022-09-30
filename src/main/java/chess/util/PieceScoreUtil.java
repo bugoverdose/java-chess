@@ -18,7 +18,7 @@ public class PieceScoreUtil {
     }
 
     public static double toScore(Piece piece) {
-        PieceType pieceType = piece.type();
+        PieceType pieceType = piece.getType();
         return PieceScoreMap.scoreOf(pieceType);
     }
 
